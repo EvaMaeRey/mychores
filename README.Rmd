@@ -35,11 +35,11 @@ chores::prompt_new(chore = "pipify-suffix",
 Or I can initiate a new chore you can write use `chores::prompt_new()`
 
 
-```{r}
-# chores::prompt_remove(chore = "flipbookify")
+```{r, eval = F}
+chores::prompt_remove(chore = "flipbookify")
 chores::prompt_new(chore = "flipbookify",
                    interface = "replace",
-                   contents = "flipbookify-replace.md")
+                   contents = "mychores_flipbookify.md")
 ```
 
 
@@ -54,8 +54,6 @@ paste0("https://github.com/EvaMaeRey/mychores/blob/main/", my_prompts)
 
 
 # If you want to register any of these chores, you can do so as follows.
-
-
 
 # If you want to register the chores of interest as follows: 
 

@@ -14,7 +14,7 @@ reference to other folks chores too (from the chores gallery).
 md_files <- list.files(pattern = "\\.md")
 my_prompts <- md_files[md_files != "README.md"]
 my_prompts
-#> [1] "flipbookify-replace.md" "pipify-suffix.md"
+#> [1] "mychores_flipbookify.md" "mychores_pipify.md"
 ```
 
 I registered my chores as follows, when I write an ‘.md’ file from
@@ -29,10 +29,10 @@ chores::prompt_new(chore = "pipify-suffix",
 Or I can initiate a new chore you can write use `chores::prompt_new()`
 
 ``` r
-# chores::prompt_remove(chore = "flipbookify")
+chores::prompt_remove(chore = "flipbookify")
 chores::prompt_new(chore = "flipbookify",
                    interface = "replace",
-                   contents = "flipbookify-replace.md")
+                   contents = "mychores_flipbookify.md")
 ```
 
 # Here’s a list of the *web* addresses of the chores in this repo.
